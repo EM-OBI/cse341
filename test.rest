@@ -1,0 +1,32 @@
+### Get all
+http://localhost:3000/contacts/
+
+### Get by ID
+http://localhost:3000/contacts/6820be675c8b34544e084425
+
+### Add new contact
+POST http://localhost:3000/contacts/ HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Jax",
+  "lastName": "Dawson",
+  "email": "jaxdawson@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-05-15"
+}
+
+### Modify/Update contact
+PUT http://localhost:3000/contacts/6820be675c8b34544e084425 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Timmy",
+  "lastName": "McVey",
+  "email": "timmymcvey@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-05-15"
+}
+
+### Delete contact
+DELETE http://localhost:3000/contacts/6824ba8b2adafb516a5eb38f HTTP/1.1
